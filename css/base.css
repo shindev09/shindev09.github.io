@@ -1,0 +1,66 @@
+:root{
+    --color-primary: #484854;
+    --color-text-main: #9b87a2;
+    --color-text: #d0cfdd;
+    --color-text-primary: #e5b2e2;
+    --color-btn: #555699;
+    --btn-icon: #5c578c;
+    --color-background: #212030;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* ------------------ball */
+@keyframes mymove {
+   from  {left: 0px; opacity: 1;}
+   to {left: 900px; opacity: 0;}
+}
+/* --------------------interests-span */
+@keyframes iconInterest {
+    from  {transform: scale(3);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+@keyframes span1 {
+    from  {left: -100px; opacity: 0;}
+    to {left: 0; opacity: 1;}
+}
+@keyframes span2 {
+    from  {top: 100px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+@keyframes span3 {
+    from  {bottom: 100px; opacity: 0;}
+    to {bottom: 0; opacity: 1;}
+}
+@keyframes span4 {
+    from  {top: 100px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+@keyframes span5 {
+    from  {left: -100px; opacity: 0;}
+    to {left: 0; opacity: 1;}
+}
+@keyframes span6 {
+    from  {bottom: 100px; opacity: 0;}
+    to {bottom: 0; opacity: 1;}
+}
+@keyframes span7 {
+    from  {left: 100px; opacity: 0;}
+    to {left: 0; opacity: 1;}
+}
+@keyframes span8 {
+    from  {top: 100px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+@keyframes span9 {
+    from  {right: 100px; opacity: 0;}
+    to {right: 0; opacity: 1;}
+}

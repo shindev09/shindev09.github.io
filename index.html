@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog của Tâm</title>
+    <link rel="shortcut icon" href="./images/cat.png">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="header__logo">
+                <img class="header__logo-img" src="./images/logo.gif" alt="logo">
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-active" onclick="change('information',this)">
+                        <i class="header__navbar-icon fas fa-user"></i>
+                        <p class="header__navbar-text"> Information</p>
+                    </li>
+                    <li class="header__navbar-item" onclick="change('education',this)">
+                        <i class="header__navbar-icon fas fa-graduation-cap"></i>
+                        <p class="header__navbar-text">Education</p>
+                    </li>
+                    <li class="header__navbar-item" onclick="change('interests',this)">
+                        <i class="header__navbar-icon fas fa-heart"></i>
+                        <p class="header__navbar-text"> Interests</p>
+                    </li>
+                </ul>
+                <div class="header__navbar-footer">
+                    <ul class="navbar__footer-list">
+                        <li class="navbar__footer-item">
+                            <a href="##" class="navbar__footer-link"><i class="navbar__footer-icon fab fa-facebook"></i></a>
+                        </li>
+                        <li class="navbar__footer-item">
+                            <a href="##" class="navbar__footer-link"><i class="navbar__footer-icon fab fa-instagram"></i></a>
+                        </li>
+                        <li class="navbar__footer-item">
+                            <a href="##" class="navbar__footer-link"><i class="navbar__footer-icon fab fa-twitter"></i></a> 
+                        </li>
+                        <li class="navbar__footer-item">
+                            <a href="##" class="navbar__footer-link"><i class="navbar__footer-icon fab fa-github"></i></a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-information" id="information">
+            <div class="grid wide">
+                <div class="row container__content">
+                    <div class="col  container__wrap">
+                        <div class="container__change container__heading">
+                            <div class="container__heading-logo"><i class="header__navbar-icon fas fa-home"></i></div>
+                            <div class="container__heading-info">Information</div>
+                        </div>
+                        <div class="container__change container__heading-search">
+                            <input type="text" class="heading__search-input" placeholder="Search">
+                            <i class="heading__search-icon fas fa-search"></i>
+                        </div>
+                        <div class="container__change container__heading-notify">
+                            <i class="heading__notify-icon fas fa-bell"></i>
+                        </div>
+                        <div class="container__change container__heading-user">
+                            <i class="header__user-icon fas fa-user"></i>
+                            <p class="header__user-name">H Thanh Tâm</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- infomation -->
+                <div class="row container__content">
+                    <div class="col container__wrap">
+                        <div class="container__content-infomation">
+                            <div class="content__infomation-title">
+                                <i class="content__infomation-icon fas fa-user"></i>
+                                <p>Information</p>
+                            </div>
+                            <div class="content__information-body">
+                                <div class="container__change content__infomation-wrapper">
+                                    <div class="content__infomation-logo">
+                                        <img class="content__infomation-img" src="./images/meo.jpg" alt="">
+                                    </div>
+                                    <div class="content__infomation-vitae">
+                                        <div class="content__infomation-question">
+                                            <div class="content-info-item content__info-title">Full name</div>
+                                            <div class="content-info-item content__info-title">Date</div>
+                                            <div class="content-info-item content__info-title">Interests</div>
+                                            <div class="content-info-item content__info-title">Gender</div>
+                                        </div>
+                                        <div class="content__infomation-answer">
+                                            <div
+                                                class="content-info-item content__info-text content__infomation-active">
+                                                Hồ Thanh Tâm</div>
+                                            <div class="content-info-item content__info-text">09/01/1999</div>
+                                            <div class="content-info-item content__info-text">Play games, code
+                                            </div>
+                                            <div class="content-info-item content__info-text">Male</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container__change content__infomation-wrapper">
+                                    <div class="content__infomation-vitae">
+                                        <div class="content__infomation-question">
+                                            <div class="content-info-item content__info-title">Job</div>
+                                            <div class="content-info-item content__info-title">School</div>
+                                            <div class="content-info-item content__info-title">Number phone</div>
+                                            <div class="content-info-item content__info-title">Relationship</div>
+                                        </div>
+                                        <div class="content__infomation-answer">
+                                            <div
+                                                class="content-info-item content__info-text content__infomation-active">
+                                                Student</div>
+                                            <div class="content-info-item content__info-text">Duy Tan University</div>
+                                            <div class="content-info-item content__info-text">035 2409 114</div>
+                                            <div class="content-info-item content__info-text">Alone</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container__change content__infomation-wrapper">
+                                    <div class="content__infomation-vitae">
+                                        <div class="content__infomation-question">
+                                            <div class="content-info-item content__info-title">Nation</div>
+                                            <div class="content-info-item content__info-title">Religion</div>
+                                        </div>
+                                        <div class="content__infomation-answer">
+                                            <div
+                                                class="content-info-item content__info-text content__infomation-active">
+                                                Kinh</div>
+                                            <div class="content-info-item content__info-text">Buddhism</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__information-skill">
+                                <div class="content__information-title">
+                                    <i class="content__information-icon fas fa-graduation-cap"></i>
+                                    <p class="content__information-text">Skill</p>
+                                </div>
+                                <div class="content__information-body">
+                                    <div class="content__information-wrap">
+                                        <div class="content__information-wrapper">
+                                            <div class="content__information-skill">
+                                                <div class="skill__mine">
+                                                    <p class="skill__mine-text skill__mine-content">Front-End
+                                                        Developement</p>
+                                                    <p class="skill__mine-text skill__loading-text">50%</p>
+                                                </div>
+                                                <span class="skill__loading">
+                                                    <span class="skill__loading skill__loading-loaded"></span>
+                                                </span>
+                                            </div>
+                                            <div class="content__information-skill">
+                                                <div class="skill__mine">
+                                                    <p class="skill__mine-text skill__mine-content">Back-End
+                                                        Developement</p>
+                                                    <p class="skill__mine-text skill__loading-text">0%</p>
+                                                </div>
+                                                <span class="skill__loading">
+                                                    <span
+                                                        class="skill__loading skill__loading-loaded skill__be-loaded"></span>
+                                                </span>
+                                            </div>
+                                            <div class="content__information-skill">
+                                                <div class="skill__mine">
+                                                    <p class="skill__mine-text skill__mine-content">Mobile-App
+                                                        Developement</p>
+                                                    <p class="skill__mine-text skill__loading-text">20%</p>
+                                                </div>
+                                                <span class="skill__loading">
+                                                    <span
+                                                        class="skill__loading skill__loading-loaded skill__mobile-loaded"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content__information-wrap">
+                                        <div class="content__information-wrapper">
+                                            <div class="content__information-skill">
+                                                <div class="skill__mine">
+                                                    <p class="skill__mine-text skill__mine-content">Play games</p>
+                                                    <p class="skill__mine-text skill__loading-text">80%</p>
+                                                </div>
+                                                <span class="skill__loading">
+                                                    <span
+                                                        class="skill__loading skill__loading-loaded skill__games-loaded"></span>
+                                                </span>
+                                            </div>
+                                            <div class="content__information-skill">
+                                                <div class="skill__mine">
+                                                    <p class="skill__mine-text skill__mine-content">Speaking</p>
+                                                    <p class="skill__mine-text skill__loading-text">40%</p>
+                                                </div>
+                                                <span class="skill__loading">
+                                                    <span
+                                                        class="skill__loading skill__loading-loaded skill__speak-loaded"></span>
+                                                </span>
+                                            </div>
+                                            <div class="content__information-skill">
+                                                <div class="skill__mine">
+                                                    <p class="skill__mine-text skill__mine-content">Communication</p>
+                                                    <p class="skill__mine-text skill__loading-text">30%</p>
+                                                </div>
+                                                <span class="skill__loading">
+                                                    <span
+                                                        class="skill__loading skill__loading-loaded skill__conmmunication-loaded"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content__information-logo">
+                                        <img class="content__information-img" src="./images/6.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-education" id="education">
+            <div class="row container__content">
+                <div class="col  container__wrap">
+                    <div class="container__change container__heading">
+                        <div class="container__heading-logo"><i class="header__navbar-icon fas fa-home"></i></div>
+                        <div class="container__heading-info">Education</div>
+                    </div>
+                    <div class="container__change container__heading-search">
+                        <input type="text" class="heading__search-input" placeholder="Search">
+                        <i class="heading__search-icon fas fa-search"></i>
+                    </div>
+                    <div class="container__change container__heading-notify">
+                        <i class="heading__notify-icon fas fa-bell"></i>
+                    </div>
+                    <div class="container__change container__heading-user">
+                        <i class="header__user-icon fas fa-user"></i>
+                        <p class="header__user-name">H Thanh Tâm</p>
+                    </div>
+                </div>
+                <div class="col container__wrap">
+                    <div class="container__body">
+                        <div class="body__title">
+                            <i class="body__title-icon fas fa-book"></i>
+                            <h1 class="body__title-text">Education</h1>
+                        </div>
+                        <div class="body__content">
+                           <div class="content__education-left">
+                                <div class="content__education-item item-left">
+                                    <h2 class="education-item-type">Primary school</h2>
+                                    <h2 class="education-item-name">Tran Quoc Toan Primary school</h2>
+                                    <h2 class="education-item-schoolYear">Sep 2005 - May 2010</h2>
+                                    <p class="education-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed officiis a quisquam! Id, veniam? Dolores error pariatur facere eius sed sunt.</p>
+                                </div>
+                                <div class="content__education-item item-left">
+                                    <h2 class="education-item-type">Junior high school</h2>
+                                    <h2 class="education-item-name">Ly Tu Trong Junior high school</h2>
+                                    <h2 class="education-item-schoolYear">Sep 2010 - May 2014</h2>
+                                    <p class="education-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed officiis a quisquam! Id, veniam? Dolores error pariatur facere eius sed sunt.</p>
+                                </div>
+                                <div class="content__education-item item-left">
+                                    <h2 class="education-item-type">High school</h2>
+                                    <h2 class="education-item-name">Le Quy Don High school</h2>
+                                    <h2 class="education-item-schoolYear">Sep 2014 - May 2017</h2>
+                                    <p class="education-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed officiis a quisquam! Id, veniam? Dolores error pariatur facere eius sed sunt.</p>
+                                </div>
+                           </div>
+                           <div class="content__education-between">
+                               <div class="content__education-item-icon content__education-icon-school">
+                                    <i class="education__item-icon fas fa-school"></i>
+                                </div>
+                                <div class="content__education-item-icon content__education-icon-child">
+                                    <i class="education__item-icon fas fa-child"></i>
+                                </div>
+                                <div class="content__education-item-icon content__education-icon-global">
+                                    <i class="education__item-icon fas fa-globe-europe"></i>
+                                </div>
+                                <div class="content__education-item-icon content__education-icon-user">
+                                    <i class="education__item-icon fas fa-user-graduate"></i>
+                                </div>
+                                
+                           </div>
+                           <div class="content__education-right">
+                                <div class="content__education-item item-right">
+                                    <h2 class="education-item-type">University</h2>
+                                    <h2 class="education-item-name">Duy Tan University</h2>
+                                    <h2 class="education-item-schoolYear">Sep 2017 - Now</h2>
+                                    <p class="education-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed officiis a quisquam! Id, veniam? Dolores error pariatur facere eius sed sunt.</p>
+                                </div>
+                                <div class="content__education-item item-right">
+                                    <h2 class="education-item-type">Front-End Development</h2>
+                                    <h2 class="education-item-name">Front-End</h2>
+                                    <h2 class="education-item-schoolYear">2019 - Now</h2>
+                                    <p class="education-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed officiis a quisquam! Id, veniam? Dolores error pariatur facere eius sed sunt.</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+       <div class="container-interests" id="interests">
+            <div class="row container__content">
+                <div class="col container__wrap">
+                    <div class="container__change container__heading">
+                        <div class="container__heading-logo"><i class="header__navbar-icon fas fa-home"></i></div>
+                        <div class="container__heading-info">Interests</div>
+                    </div>
+                    <div class="container__change container__heading-search">
+                        <input type="text" class="heading__search-input" placeholder="Search">
+                        <i class="heading__search-icon fas fa-search"></i>
+                    </div>
+                    <div class="container__change container__heading-notify">
+                        <i class="heading__notify-icon fas fa-bell"></i>
+                    </div>
+                    <div class="container__change container__heading-user">
+                        <i class="header__user-icon fas fa-user"></i>
+                        <p class="header__user-name">H Thanh Tâm</p>
+                    </div>
+                </div>
+                <div class="col container__wrap-interest">
+                    <div class="container__interests-title">
+                        <i class="interests__icon fas fa-heart"></i>
+                        <div class="interests__text">
+                            <span>I</span>
+                            <span>n</span>
+                            <span>t</span>
+                            <span>e</span>
+                            <span>r</span>
+                            <span>e</span>
+                            <span>s</span>
+                            <span>t</span>
+                            <span>s</span>
+                        </div>
+                    </div>
+                    <div class="container__interests-body">
+                        <div class="interests__item interests__soccer-item">
+                            <div class="interests__soccer interests__favourite">
+                                <img class="interests-img" src="images/12.gif" alt="gif">
+                            </div>
+                            <div class="interest__favourite-content">
+                                <div class="favourite__content-wrap">
+                                        <span></span>
+                                        <span>P</span>
+                                        <span>l</span>
+                                        <span>a</span>
+                                        <span>y</span>
+                                        <span></span>
+                                        <span>S</span>
+                                        <span>o</span>
+                                        <span>c</span>
+                                        <span>c</span>
+                                        <span>e</span>
+                                        <span>r</span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interests__item interests__code-item">
+                            <div class="interests__favourite">
+                                <img class="interests-img" src="images/14.gif" alt="gif">
+                            </div>
+                            <div class="interest__favourite-content">
+                                <div class="favourite__content-wrap">
+                                        <span></span>
+                                        <span>D</span>
+                                        <span>e</span>
+                                        <span>v</span>
+                                        <span>e</span>
+                                        <span>l</span>
+                                        <span>o</span>
+                                        <span>p</span>
+                                        <span></span>
+                                        <span>W</span>
+                                        <span>e</span>
+                                        <span>b</span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interests__item interests__walk-item">
+                            <div class="interests__favourite">
+                                <img class="interests-img" src="images/riding-bike-in-school.gif" alt="gif">
+                            </div>
+                            <div class="interest__favourite-content">
+                                <div class="favourite__content-wrap">
+                                        <span></span>
+                                        <span>G</span>
+                                        <span>o</span>
+                                        <span></span>
+                                        <span>t</span>
+                                        <span>o</span>
+                                        <span></span>
+                                        <span>W</span>
+                                        <span>a</span>
+                                        <span>l</span>
+                                        <span>k</span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>                     
+                                </div>
+                            </div>
+                        </div>         
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
